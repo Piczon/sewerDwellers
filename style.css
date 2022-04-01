@@ -248,8 +248,7 @@ h2.section_subtitle {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    gap: 30px;
 }
 .subsection_wrapper.grid_gallery img{
     width: 100%;
