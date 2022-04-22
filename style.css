@@ -276,3 +276,120 @@ h2.section_subtitle {
     margin-right: 30px;
     width: 40px;
 }
+.reviews {
+
+}
+.review_box {
+    margin: 20px 0;
+}
+.review_author {
+    cursor: pointer;
+    margin: 0;
+}
+.review_short {
+    width: 700px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+.review_short.active {
+    max-height: 1000px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact a {
+    text-decoration: none;
+    margin: 10px 0;
+    color: var(--secondaryColor);
+}
+footer {
+    font-size: 10px;
+    margin: 10px;
+}
+@media screen and (max-width: 798px) {
+    nav {
+        height: 70px;
+    }
+    nav img {
+        width: auto;
+    }
+    nav .navigation_link {
+        display: none;
+    }
+    header#video_header_section img {
+        height: 100%;
+    }
+    header .header_title {
+        font-size: 45px;
+        text-align: center;
+    }
+    header .header_watch_button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .page_section {
+        width: 90%;
+    }
+    .section_title {
+        font-size: 35px;
+    }
+    .live_act_row {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .live_act_row > * {
+        width: 33%;
+        font-weight: 100;
+        margin: 5px 0;
+    }
+    .concert_date {
+        width: 100%;
+        font-weight: 700;
+    }
+    .concert_name {
+        text-align: left;
+    }
+    .live_act_row .concert_link {
+        width: 100%;
+        margin-left: 0;
+    }
+    #bio .section_content {
+        width: 100%;
+    }
+    #bio .section_content p {
+        font-size: 16px;
+    }
+    #bio .members {
+        flex-wrap: wrap;
+    }
+    #bio .members .member {
+        width: 50%;
+        margin: 30px 0;
+    }
+    #music .section_content {
+        width: 100%;
+    }
+    #music .album {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    #music .album > div {
+        width: 100%;
+    }
+    .album .song {
+        width: auto;
+        align-items: center;
+    }
+    .subsection_wrapper.grid_gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .subsection_wrapper.presskit .download_presskit {
+        width: unset;
+    }
+}
